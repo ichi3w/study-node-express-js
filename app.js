@@ -2,6 +2,7 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+const helmet = require("helmet");
 
 var myLogger = require("./middleware/my_logger.js");
 
@@ -11,6 +12,8 @@ var downloadRouter = require("./routes/download");
 var paramRouter = require("./routes/param");
 
 var app = express();
+
+app.use(helmet());
 
 app.use(logger("dev"));
 app.use(express.json());

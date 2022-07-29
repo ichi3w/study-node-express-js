@@ -3,7 +3,7 @@
 Node.js と [Express.js](https://expressjs.com/) の練習用リポジトリ。
 細かな仕様の把握のため。
 
-やりたいことメモ
+## やりたいことメモ
 
 - [x] Express.js 入れる
 - [ ] Express.js の基本的な動きを確認
@@ -15,3 +15,13 @@ Node.js と [Express.js](https://expressjs.com/) の練習用リポジトリ。
 - [ ] ユーザー管理系の追加
 
 Docker いれねば、、笑
+
+## 調べたいこと
+
+- [x] ES Module について
+- [ ] アロー関数の扱い
+- [ ] path モジュールについて
+- [ ] リバースプロキシで Express を置く場合
+- [ ] CSRF など対策
+- [ ] helmet の詳細
+- [ ] プロセスマネージャーと適切なロギング
