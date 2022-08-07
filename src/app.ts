@@ -19,8 +19,13 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
 
+const publicPath = path.join(__dirname.replace("/src", ""), "public");
+
+console.log(publicPath);
+console.log("にゃあああああああああああああああああ");
+
+app.use(express.static(publicPath));
 app.use(myLogger({ message: "Hello World" }));
 
 app.use("/", indexRouter);
@@ -28,4 +33,4 @@ app.use("/users", usersRouter);
 app.use("/download", downloadRouter);
 app.use("/user", paramRouter);
 
-module.exports = app;
+export default app;

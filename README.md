@@ -6,7 +6,7 @@ Node.js と [Express.js](https://expressjs.com/) の練習用リポジトリ。
 ## やりたいことメモ
 
 - [x] Express.js 入れる
-- [ ] Express.js の基本的な動きを確認
+- [x] Express.js の基本的な動きを確認
 - [ ] TypeScript 入れる
 - [ ] React.js との API 連携
 - [ ] ファイル配信(image, video)
